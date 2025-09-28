@@ -1,0 +1,41 @@
+name: video_editor_app
+description: A simple video editing app with crop, edit, and save functionality
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.6
+
+  # Video handling
+  video_player: ^2.8.1
+  video_editor: ^3.0.0
+
+
+  # File handling - using image_picker for mobile only
+  image_picker: ^1.0.4
+  path_provider: ^2.1.1
+  permission_handler: ^11.0.1
+
+  # Utilities
+  share_plus: ^7.2.1
+  fluttertoast: ^8.2.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
